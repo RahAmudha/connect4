@@ -1,11 +1,11 @@
-Using the provided code that can be downloaded from this github add a new class that inherits from game.cpp in the same way TicTacToe.cpp does and implement a working version of the game Connect 4. The game should be added as a fourth choice from the menu so the choices are Tic Tac Toe, Checkers, Othello and now Connect 4.
+This is my implementation of Connect 4. I am on WSL so I modified the main_macos.cpp a little bit in order to run my code properly.
 
-The game must be playable by both by 2 people and vs. an AI. Your implementation must check for the winning condition, and display that on the right hand side the same way the current setup does for tic-tac-toe. The stopGame() method is expected to clean up and delete any memory allocated.
+The main struggle with this assignment was to create a wellrounded heuristic that handles basic cases and is not computationally expensive.
 
-Look at the new Grid.cpp class and see how it is used in Checkers.cpp for a good understanding about laying out a useable grid.
+My first step was to make sure all the mechanics of Connect4 were working, meaning all of the moves had to be valid, the win conditions set, and make sure that process is efficient.
 
-For extra credit, when a game piece is added to the board, make it animate into place instead of just appearing in it's final spot.
-
-Graphic files are provided for the game pieces called yellow.png and red.png.
-
-For the submission, create a new github based on the above code-base and provide a link to that along with a complete readme.md on how your implementation works.
+After that, I implemented the negamax algorithm with alpha-beta pruning. I made sure to include multiple optimizations as well, such as preordering the columns and using 
+a Zobrist cache (which I read a lot into, they're super cool and increase the perf a lot). As for the performance of my AI, it is able to reach a depth of 15 and make moves 
+in less than 5 seconds, however, there were a few instances where my AI was lacking. One of the main problems that I could not solve for some reason was double threats, were
+the player would put in a delayed fork, and the AI would not be able to figure out what to do against that. I tried my best to solve this problem, but I could not find a good
+solution.
