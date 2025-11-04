@@ -4,6 +4,8 @@
 #include "Turn.h"
 #include "../Application.h"
 
+#include <cmath>
+
 Game::Game()
 {
 	_gameOptions.AIPlayer = false;

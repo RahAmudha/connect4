@@ -1,4 +1,5 @@
 #include "Application.h"
+#include "classes/Connect4.h"
 #include "imgui/imgui.h"
 #include "classes/TicTacToe.h"
 #include "classes/Checkers.h"
@@ -55,6 +56,20 @@ namespace ClassGame {
                     if (ImGui::Button("Start Othello")) {
                         game = new Othello();
                         game->setUpBoard();
+                    }
+                    if (ImGui::Button("Start Connect4 As P1")) {
+                        game = new Connect4();
+                        game->setUpBoard();
+                        game->setAIPlayer(1);
+                        game->_players[0]->setPlayerNumber(0);
+                    }
+
+                    // Extremely Buggy
+                    if (ImGui::Button("Start Connect4 As P2")) {
+                        game = new Connect4();
+                        game->setUpBoard();
+                        game->setAIPlayer(0);
+                        game->_players[1]->setPlayerNumber(0);
                     }
                 } else {
                     ImGui::Text("Current Player Number: %d", game->getCurrentPlayer()->playerNumber());

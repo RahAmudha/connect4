@@ -1,0 +1,102 @@
+[
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/Application.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/Application.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/Application.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/imgui/imgui_demo.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_demo.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_draw.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_tables.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_widgets.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/imgui/imgui.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/imgui/imgui.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/Bit.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/Bit.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/Bit.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/BitHolder.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/BitHolder.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/BitHolder.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/Game.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/Game.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/Game.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/Sprite.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/Sprite.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/Sprite.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/Square.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/Square.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/Square.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/ChessSquare.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/ChessSquare.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/ChessSquare.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/Grid.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/Grid.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/Grid.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/TicTacToe.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/TicTacToe.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/TicTacToe.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/Checkers.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/Checkers.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/Checkers.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/Othello.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/Othello.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/Othello.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/classes/Connect4.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/classes/Connect4.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/classes/Connect4.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/main_macos.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/main_macos.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/main_macos.cpp"
+},
+{
+  "directory": "/home/ramudhas/cmpm123/connect-4-starter/build",
+  "command": "/usr/bin/clang++  -Wall -Wextra -Wno-unused-parameter -Wno-ignored-qualifiers -g -std=gnu++20 -o CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o -c /home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_impl_glfw.cpp",
+  "file": "/home/ramudhas/cmpm123/connect-4-starter/imgui/imgui_impl_glfw.cpp"
+}
+]

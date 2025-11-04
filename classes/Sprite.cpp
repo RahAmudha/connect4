@@ -40,7 +40,6 @@ bool Sprite::highlighted()
 	return _highlighted;
 }
 
-#ifdef __APPLE__
 #include "../imgui/imgui_impl_opengl3_loader.h"
 
 ImTextureID Sprite::_loadTextureFromMemory(const unsigned char *image_data, int image_width, int image_height)
@@ -59,63 +58,3 @@ ImTextureID Sprite::_loadTextureFromMemory(const unsigned char *image_data, int 
 
     return static_cast<ImTextureID>(image_texture);
 }
-
-#else
-
-// DirectX
-#include <stdio.h>
-#include <d3d11.h>
-#include <d3dcompiler.h>
-#ifdef _MSC_VER
-#pragma comment(lib, "d3dcompiler") // Automatically link with d3dcompiler.lib as we are using D3DCompile() below.
-#endif
-
-ImTextureID Sprite::_loadTextureFromMemory(const unsigned char *image_data, int image_width, int image_height)
-{
-    // Create texture
-    D3D11_TEXTURE2D_DESC desc;
-    ZeroMemory(&desc, sizeof(desc));
-    desc.Width = image_width;
-    desc.Height = image_height;
-    desc.MipLevels = 1;
-    desc.ArraySize = 1;
-    desc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
-    desc.SampleDesc.Count = 1;
-    desc.Usage = D3D11_USAGE_DEFAULT;
-    desc.BindFlags = D3D11_BIND_SHADER_RESOURCE;
-    desc.CPUAccessFlags = 0;
-
-    ID3D11Texture2D *pTexture = NULL;
-    D3D11_SUBRESOURCE_DATA subResource;
-    subResource.pSysMem = image_data;
-    subResource.SysMemPitch = desc.Width * 4;
-    subResource.SysMemSlicePitch = 0;
-
-    // You need to have a valid ID3D11Device* available as g_pd3dDevice
-    extern ID3D11Device* g_pd3dDevice; // Add this line if g_pd3dDevice is defined elsewhere
-
-    HRESULT hr = g_pd3dDevice->CreateTexture2D(&desc, &subResource, &pTexture);
-    if (FAILED(hr) || !pTexture) {
-        return 0;
-    }
-
-    // Create texture view
-    D3D11_SHADER_RESOURCE_VIEW_DESC srvDesc;
-    ZeroMemory(&srvDesc, sizeof(srvDesc));
-    srvDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
-    srvDesc.ViewDimension = D3D11_SRV_DIMENSION_TEXTURE2D;
-    srvDesc.Texture2D.MipLevels = desc.MipLevels;
-    srvDesc.Texture2D.MostDetailedMip = 0;
-
-    ID3D11ShaderResourceView* shaderResourceView = nullptr;
-    hr = g_pd3dDevice->CreateShaderResourceView(pTexture, &srvDesc, &shaderResourceView);
-    pTexture->Release();
-
-    if (FAILED(hr) || !shaderResourceView) {
-
-        return 0;
-    }
-    return reinterpret_cast<ImTextureID>(shaderResourceView);
-}
-#endif
-
